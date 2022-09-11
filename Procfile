@@ -1,1 +1,1 @@
-web: gunicorn table.wsgi --log-file -
+web: gunicorn scoreboard.wsgi --log-file -
