@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.1;
+    background-color: white;
+}
+img {
+    -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline #5c169e;
+    color: #5c169e;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0 0 1rem 1rem;
+}
+h2 {
+    font-size: 2rem;
+    margin:0 0 0.5rem 0;
+    text-align: center;
+}
+.h2_clan_name {
+    font-size: 2.5rem;
+    margin:0 0 0.5rem 0;
+    text-align: left;
+}
+h3 {
+    text-align: center;
+
+}
+input {
+    margin-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    background: rgb(30, 29, 29);
+    width: 100%;
+    color: white;
+}
+
+    header p {
+        margin: 0;
+        padding: 0;
+    }
+
+main {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.navigation {
+    overflow: hidden;
+    width: 15%;
+    min-width: 180px;
+    margin: 0 15px;
+    padding: 1rem;
+    height: auto;
+    position: fixed;
+
+}
+
+.content {
+    width: 75%;
+    margin: 0 0 10px 19%;
+
+}
+
+.chapters_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.chapters_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.blue_block {
+    background-color: ghostwhite;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 40px black;
+
+}
+.big_blue_block {
+    width: 66%;
+    background-color: ghostwhite;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 40px black;
+    font-size: 1.1rem;
+
+}
+.blue_block_top_100 {
+    background-color: ghostwhite;
+    border-radius: 1rem;
+    padding: 1.5rem 4rem 2rem 2rem;
+    margin: 1rem;
+    box-shadow: 0 0 40px black;
+    font-size: 1.1rem;
+}
+
+.clan_info_table_div {
+    margin-left: 14rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.clan_info_ul li:nth-child(even) {
+    background-color: white;
+    border-bottom: 1px solid #e6e6fa;
+    }
+.clan_info_ul li:nth-child(odd) {
+    background-color: ghostwhite;
+    border-bottom: 1px solid #e6e6fa;
+}
+.clan_info_span {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.span_bold {
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.clan_icon {
+    float: left;
+    margin: 1rem;
+
+}
+
+.form-inline {
+    display: flex;
+    width: 50%;
+    margin: 1rem;
+}
+.ul_navigation {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.a_navigation {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.sub_a_navigation {
+    margin-left: 1rem;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.a_clan_link {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.ratings_table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.ratings_span {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem 10px;
+    border-bottom: 1px solid #e6e6fa;
+}
+.ratings_span_large {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #e6e6fa;
+}
+.ratings_span_top_100 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem 10px 0.25rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #e6e6fa;
+}
+.tr_hover:hover {
+    background-color: #e6e6fa;
+}
+
+.td_rank_delta {
+    text-align: right;
+    font-size: 0.9rem;
+    
+}
+.td_rank {
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-text {
+    font-size: 0.9rem;
+}
+.updated_time {
+    position: inherit;
+    float: right;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.tabs-wrapper {
+    background-color: ghostwhite;
+    margin: 1rem;
+    box-shadow: 0 0 40px black;
+    border-radius: 1rem;
+}
+.tabs-header {
+    display: flex;
+}
+.tabs-header .btn {
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+
+}
+.tabs-header :first-of-type {
+    border-radius: 1rem 0 0 0;
+    border-right: 1px solid black;
+}
+.tabs-header :last-of-type {
+    border-radius: 0 1rem 0 0;
+    border-left: 1px solid black;
+}
+.tab-panel {
+    display: none;
+}
+.tab_panel_data {
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: ghostwhite;
+    border-top: 1px solid black;
+}
+.tab-panel.active {
+    display: block;
+}
+
+
+footer {
+    margin-top: auto;
+    background: rgb(30, 29, 29);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+    footer p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding: 0;
+    }

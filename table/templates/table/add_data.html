@@ -1,0 +1,37 @@
+{% extends 'table/layout.html' %}
+
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1>Подтвердите внесение данных:</h1>
+<form method="post">
+    {% csrf_token%}
+    <div>
+        {% for nickname,count in nicknames_dict.items %}
+            {% if nickname in db_nicknames_list %}
+                <div class="nickname_div"><input  class="input_correct" type="text" name={{ nickname }} value={{ nickname }}>( x{{ count }} )</div>
+            {% else %}
+                <div class="nickname_div"><input  class="input_incorrect" type="text" name={{ nickname }} value={{ nickname }}>( x{{ count }} )</div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="gangs" checked>
+        <label class="form-check-label" for="inlineRadio1">Гангов за месяц</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="forts">
+        <label class="form-check-label" for="inlineRadio2">Форты/Замки за месяц</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="fights">
+        <label class="form-check-label" for="inlineRadio3">"На подраться" за месяц</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="zvz">
+        <label class="form-check-label" for="inlineRadio4">ЗВЗ/Клаймы за месяц</label>
+      </div>
+    <button type="submit" class="btn btn-outline-dark">Отправить</button>
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+        <body>
+            <div class="page">
+                <main>
+                    <div class="navigation">
+                        <ul class="ul_navigation">
+                            <li><a href='{% url "table" %}'><button type="submit" class="btn btn-outline-dark">Главная</button></a></li>
+                            <li><a href='{% url "add_image" %}'><button type="submit" class="btn btn-outline-dark">Добавить данные</button></a></li>
+                            <li><a href='{% url "edit_data" %}'><button type="submit" class="btn btn-outline-dark">Редактировать данные</button></a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </main>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1;
+}
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    width: 100%;
+    margin-top: 5rem;
+}
+.navigation {
+    overflow: hidden;
+    width: 15%;
+    min-width: 180px;
+    margin: 0 15px;
+    padding: 0 1rem;
+    height: auto;
+    position: fixed;
+
+}
+.content {
+    width: 75%;
+    margin: 0 0 10px 18%;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline black;
+    color: black;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+    background-color: gray;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼";
+    
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲";
+}
+
+th:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.nicknames_column {
+    text-align: left;   
+}
+table {
+    text-align: center;
+
+}
+
+.form-control {
+    display: inline;
+    width: 12rem;
+}
+.nickname_div {
+    display: inline;
+    margin: auto;
+}
+.input_correct {
+    background-color: greenyellow;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+}
+.input_incorrect {
+    background-color: red;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+}
+.my_table td{
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #dee2e6;
+}
+.my_table th{
+    padding: 0.7rem 1rem;
+    border: 1px solid #dee2e6;
+    background-color: ghostwhite;
+}
+.gangs_color {
+    background-color: #fce5cd;
+}
+.forts_color {
+    background-color: #ffd966;
+}
+.fights_color {
+    background-color: #c4d5f2;
+}
+.zvz_color {
+    background-color: #d9d2e9;
+}
+.up_color {
+    background-color: #9900ff;
+}
+.mid_color {
+    background-color: #02f703;
+}
+.down_color {
+    background-color: #ffff00;
+}
+
+

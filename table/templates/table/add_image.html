@@ -1,0 +1,13 @@
+{% extends 'table/layout.html' %}
+
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1>Прикрепите изображения для считывания ник-неймов :</h1>
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token%}
+    <input class="form-control-file" type="file" name="load_image" multiple accept="image/*">
+    <button type="submit" class="btn btn-outline-dark">Отправить</button>
+</form>
+{% endblock %}
